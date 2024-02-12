@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="home.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Maze</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+  body {
+  background-image: url('bg.jpg');
+  background-position: center center;
+ background-repeat:  no-repeat;
+ background-attachment: fixed;
+ background-size:  cover;
+}
+  .btn-primary {
+    margin: 0 auto;
+        border-color: #466baf;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: 'Signika', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #466baf;
+}
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open .dropdown-toggle.btn-primary {
+        border-color: #fff;
+        color: #fff;
+        background-color: #466baf;
+    }
+    b {
+      opacity: 0;
+    }
+    p {
+      color: #fff;
+    }
+</style>
+<body>
+
+  <div id="page">
+    <div id="Message-Container">
+      <div id="message">
+        <h1>Selamat</h1>
+        <h2>Kamu Sudah Sampai</h2>
+        <b id="moves"></b>
+        <a href="https://rifqiki.github.io/feby/"> <center></bottom><button class="btn btn-primary" >Masuk Rumah</button></center></a>
+      </div>
+    </div>
+    <br>
+    <div id="menu">
+      <div class="custom-select">
+        <select id="diffSelect">
+                  <option value="7">Semangat</option>                                
+              </select>
+      </div>
+    <div id="view">
+      <div id="mazeContainer">
+        <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+      </div>
+    </div>
+
+    <p id="instructions">Carilah Jalan Pulang Menggunakan Anak Panah</p>
+    <p> Atau Scroll Kearah Yang Kamu Mau</p>
+
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
